@@ -61,7 +61,7 @@ export const ImageReg = styled.div`
   margin-right: auto;
   width: 285px;
   height: 250px;
-  z-index: 9;
+  z-index: 8;
   background-image: url(${mainRegImgMob});
   @media (min-width: 768px) {
     width: 409px;
