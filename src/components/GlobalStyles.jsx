@@ -4,8 +4,7 @@ import 'modern-normalize';
 export const GlobalStyles = createGlobalStyle`
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: ${p => p.theme.colors.mainBgColor};
+  font-family: 'Montserrat', sans-serif;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -33,8 +32,4 @@ button, a {
   cursor: pointer;
 	text-decoration:none;
 }
-
-
-
-
 `;

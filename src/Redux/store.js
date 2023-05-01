@@ -10,17 +10,16 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from './auth/authSlise';
+import { usersReducer } from './user/usersSlise';
 
-const authPersistConfig = {
-  key: 'auth',
+const usersPersistConfig = {
+  key: 'users',
   storage,
-  whitelist: ['token'],
 };
 
 export const store = configureStore({
   reducer: {
-    auth: persistReducer(authPersistConfig, authReducer),
+    user: persistReducer(usersPersistConfig, usersReducer),
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
